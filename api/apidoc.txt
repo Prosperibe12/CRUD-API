@@ -1,0 +1,49 @@
+Base URL:   http://localhost/api/v1/
+
+---End Points-------
+adddetails.php   | POST
+listdetails.php  |GET
+updatedetails.php  |PUT
+deletedetails.php  |DELETE
+
+
+-----Response payload -----------
+{
+	"status":"Success",
+	"data":[],
+	"message":"Your details were added successfuly"
+} 
+
+---------Request Payload ----------
+adddetails endpoint
+
+{
+	"staffid": 23108100,
+	"staffname": "Prosper Ibe",
+	"staffemail": "Prosperibe12@gmail.com",
+	"staffdeptid": 108,
+	"stafflevelid": 100,
+	"staffcountryid": 23,
+	"staffdateofemploy":"25th Sept 1992"
+}
+
+----------Request Payload--------
+listdetails endpoint
+
+{
+	"staff_id": 23108100
+}
+
+--------Request Payload-----------
+update details endpoint
+{
+	"staff_id": 23108100,
+	"status": "leave"
+}
+
+--------Request Payload-----------
+delete details endpoint
+{
+	"staff_id": 23108100,
+	"status": "deleted"
+}
